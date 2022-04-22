@@ -19,6 +19,8 @@ export class CarouselComponent implements OnInit {
   images = IMAGES.imageList
   
   ngOnInit(): void {
+    this.autoSlide()
+
   }
 
   selectedImage(index: number)
@@ -26,4 +28,12 @@ export class CarouselComponent implements OnInit {
     this.selectedIndex = index
   }
 
+  autoSlide(){
+    setInterval(()=>{
+      this.selectedIndex++
+      if (this.selectedIndex === this.images.length){
+        this.selectedIndex = 0;
+      }
+    },5000)
+  }
 }
