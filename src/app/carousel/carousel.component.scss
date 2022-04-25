@@ -3,18 +3,29 @@
     margin: auto;
     text-align: center;
     width: 1013px;
-    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+.content{
+    margin: 10px 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.carousel-content{
+    display: flex;
 }
 
 .carousel-container img{
     display: none;
-    border-radius: 8px;
+    // border-radius: 8px;
 
 }
 
 .carousel-container img.image-active{
     display: block;
-    width: 100%;
+    position:relative;
+    width: 40%;
     height: 262px;
 }
 

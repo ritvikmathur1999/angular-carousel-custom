@@ -1,9 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import {IMAGES} from './carousel.config'
+import { Component, Input, OnInit } from '@angular/core';
+import {CAROUSEL} from './carousel.config'
 
-interface carouselImage{
-  imageSrc:string;
-  imageAlt:string;
+interface carouselImages{
+  imageSrc:string,
+  imageAlt:string,
+  content:string
+}
+
+interface content{
+  title:string,
+  desc:string
 }
 
 @Component({
@@ -12,14 +18,16 @@ interface carouselImage{
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit {
-
+  @Input() images: carouselImages[] = []
+  @Input() content: content[]=[]
+  
   constructor() { }
 
   selectedIndex = 0;
-  images = IMAGES.imageList
+  // images = IMAGES.imageList
   
   ngOnInit(): void {
-    this.autoSlide()
+    // this.autoSlide()
 
   }
 
