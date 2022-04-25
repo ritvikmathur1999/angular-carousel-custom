@@ -4,7 +4,6 @@ import {CAROUSEL} from './carousel.config'
 interface carouselImages{
   imageSrc:string,
   imageAlt:string,
-  content:string
 }
 
 interface content{
@@ -20,28 +19,34 @@ interface content{
 export class CarouselComponent implements OnInit {
   @Input() images: carouselImages[] = []
   @Input() content: content[]=[]
+  @Input() autoSlide: boolean = true;
+  @Input() interval:number = 4000;
+  slidingInterval!: ReturnType<typeof setInterval>;
   
   constructor() { }
 
   selectedIndex = 0;
-  // images = IMAGES.imageList
   
   ngOnInit(): void {
-    // this.autoSlide()
-
+    if(this.autoSlide)
+    this.autoSlider()
   }
 
-  selectedImage(index: number)
+  onClickSelectedCarouselContent(index: number)
   {
-    this.selectedIndex = index
+    this.selectedIndex = index;
+    if (this.autoSlide){
+    clearInterval(this.slidingInterval)
+    this.autoSlider()
+  }
   }
 
-  autoSlide(){
-    setInterval(()=>{
+  autoSlider(){
+    this.slidingInterval = setInterval(()=>{
       this.selectedIndex++
-      if (this.selectedIndex === this.images.length){
+      if (this.selectedIndex === this.images.length) {
         this.selectedIndex = 0;
       }
-    },5000)
+    },this.interval)
   }
 }

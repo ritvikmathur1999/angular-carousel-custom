@@ -1,36 +1,31 @@
 export const CAROUSEL = {
     imageList:[
         {
-            imageSrc:'https://images.unsplash.com/photo-1501380881752-df57c981dfc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wyMjgxODA2fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60',
-            imageAlt:'women',
-            content:"This is 1st content"
+            imageSrc:'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQj8-qI5NajJxZ3Os0vabxaup1bGVcuuOTWJVVcW4qmY8rWMpJnhjaNMe9tbAxz',
+            imageAlt:'A picture of Jaipur',
         },
         {
-            imageSrc:'https://images.unsplash.com/photo-1648737119359-510d4f551382?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60',
-            imageAlt:'work',
-            content:"This is 2nd content"
+            imageSrc:'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/77/15/9a/photo0jpg.jpg?w=600&h=400&s=1',
+            imageAlt:'A picture of Udaipur',
         },
         {
-            imageSrc:'https://images.unsplash.com/photo-1650509220322-40caf79619d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60',
-            imageAlt:'nature',
-            content:"This is 3rd content"
+            imageSrc:"https://www.holidify.com/images/bgImages/JODHPUR.jpg",
+            imageAlt:'A picture of Jodhpur',
         },
     ],
 
     content:[
         {
-            title:"Heading for 1st content",
-            desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            title:"Jaipur",
+            desc:"Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color. At the center of its stately street grid (notable in India) stands the opulent, colonnaded City Palace complex. With gardens, courtyards and museums, part of it is still a royal residence."
         },
         {
-            title:"Heading for 2nd content",
-            desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            title:"Udaipur",
+            desc:"Udaipur, formerly the capital of the Mewar Kingdom, is a city in the western Indian state of Rajasthan. Founded by Maharana Udai Singh II in 1559, it’s set around a series of artificial lakes and is known for its lavish royal residences. City Palace, overlooking Lake Pichola, is a monumental complex of 11 palaces, courtyards and gardens, famed for its intricate peacock mosaics."
         },
         {
-            title:"Heading for 3rd content",
-            desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            title:"Jodhpur",
+            desc:"Jodhpur is a city in the Thar Desert of the northwest Indian state of Rajasthan. Its 15th-century Mehrangarh Fort is a former palace that’s now a museum, displaying weapons, paintings and elaborate royal palanquins (sedan chairs). Set on on a rocky outcrop, the fort overlooks the walled city, where many buildings are painted the city’s iconic shade of blue."
         }
-
-        
     ]
 }

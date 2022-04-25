@@ -7,7 +7,6 @@ import { CAROUSEL } from './carousel/carousel.config';
 })
 export class AppComponent {
   title = 'carousel';
-
   images = CAROUSEL.imageList;
   content = CAROUSEL.content;
 }

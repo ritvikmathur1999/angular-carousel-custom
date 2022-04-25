@@ -2,7 +2,8 @@
     class="carousel-container">
     <div class="carousel-content">
         <img  
-        [src]="images[selectedIndex].imageSrc" [alt]="images[selectedIndex].imageAlt"
+        [src]="images[selectedIndex].imageSrc" 
+        [alt]="images[selectedIndex].imageAlt"
         [ngClass]="{'image-active': selectedIndex === selectedIndex}"
         >
         <div class="content">
@@ -22,7 +23,7 @@
     *ngFor="let dot of images;let i = index "
     class="dot"
     [ngClass]="{'active': selectedIndex === i}"
-    (click)="selectedImage(i)"
+    (click)="onClickSelectedCarouselContent(i)"
     >
 </span>
 </div>
