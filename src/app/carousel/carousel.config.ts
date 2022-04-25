@@ -1,7 +1,7 @@
 export const CAROUSEL = {
     imageList:[
         {
-            imageSrc:'https://images.unsplash.com/photo-1644982647531-daff2c7383f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60',
+            imageSrc:'https://images.unsplash.com/photo-1501380881752-df57c981dfc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wyMjgxODA2fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60',
             imageAlt:'women',
             content:"This is 1st content"
         },
