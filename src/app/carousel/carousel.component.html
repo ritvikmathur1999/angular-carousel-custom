@@ -1,18 +1,18 @@
-<div *ngIf="images && images.length" 
+<div *ngIf="dataSource && dataSource.length" 
     class="carousel-container">
     <div class="carousel-content">
         <img  
-        [src]="images[selectedIndex].imageSrc" 
-        [alt]="images[selectedIndex].imageAlt"
+        [src]="dataSource[selectedIndex].imageSrc" 
+        [alt]="dataSource[selectedIndex].imageAlt"
         [ngClass]="{'image-active': selectedIndex === selectedIndex}"
         >
         <div class="content">
         <span>
         <strong>
-            <p class="content-title">{{content[selectedIndex].title}}</p>
+            <p class="content-title">{{dataSource[selectedIndex].title}}</p>
         </strong>
         <div class="underline-decoration"></div>
-        <p class="content-desc">{{content[selectedIndex].desc}}</p>
+        <p class="content-desc">{{dataSource[selectedIndex].desc}}</p>
         <div class="underline-decoration-bottom"></div>
         </span>
         </div>
@@ -20,7 +20,7 @@
 </div>
 <div class="carousel-dot-container">
     <span
-    *ngFor="let dot of images;let i = index "
+    *ngFor="let dot of dataSource;let i = index "
     class="dot"
     [ngClass]="{'active': selectedIndex === i}"
     (click)="onClickSelectedCarouselContent(i)"
