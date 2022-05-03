@@ -3,18 +3,16 @@
     max-height: calc(50%);
     margin: auto;
     text-align: center;
-    max-width: 1013px;
-    min-width: 1013px;
     -webkit-box-shadow: 0px 0px 15px 1px rgba(199,199,199,1);
     -moz-box-shadow: 0px 0px 15px 1px rgba(199,199,199,1);
     box-shadow: 0px 0px 15px 1px rgba(199,199,199,1);
 }
 
 .content{
-    padding: 25px;
+    padding: 4%;
     text-align: justify;
     position: relative;
-    max-height: 250px;
+    // max-height: 250px;
 }
 
 .content-title{
@@ -24,7 +22,7 @@
 .content-desc{
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 7;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
 }
 
@@ -33,20 +31,10 @@
     max-height: 300px;
     
 }
-@media screen and (max-width:767px){
-    .carousel-content{
-        font-size:12px;
-        width:80%;
-        display: flex;
-    }
-  }
-
 
 .carousel-container img.image-active{
     max-width: 40%;
     min-width: 40%;
-    max-height: 100%;
-    min-height: 100%;
 }
 
 .carousel-dot-container{
@@ -76,13 +64,13 @@
 
 .underline-decoration{
     background-color: #FFCC11;
-    padding: 2px;
+    padding: 0.3%;
     width: 10%;
 }
 
 .underline-decoration-bottom{
     background-color: #FFCC11;
-    height: 20px;
+    height: 3%;
     width: 100%;
     position: absolute;
     bottom: 0;
